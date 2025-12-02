@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #0A0A0A;
+    color: #E5E5E5;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .cyber-button {
+    @apply bg-cyber-gray border border-cyber-green text-cyber-text px-4 py-2 md:px-6 md:py-3 transition-all duration-300 hover:bg-cyber-green hover:text-cyber-dark font-mono uppercase tracking-wider text-sm md:text-base;
+  }
+  
+  .cyber-card {
+    @apply bg-cyber-gray border border-cyber-gray hover:border-cyber-green transition-all duration-300 p-4 md:p-6;
+  }
+  
+  .section-title {
+    @apply text-2xl md:text-3xl lg:text-4xl font-mono text-cyber-green mb-6 md:mb-8 uppercase tracking-wider text-center;
+  }
+  
+  .text-glow {
+    text-shadow: 0 0 10px #00E676;
+  }
+  
+}
