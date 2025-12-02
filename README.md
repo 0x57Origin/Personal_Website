@@ -4,4 +4,4 @@ This is my personal website showcasing my cybersecurity work, military backgroun
 
 You can find my resume, project portfolio, and contact information here.
 
-Live site: [View Website](https://github.com/0x57Origin/Personal_Website)
+Live site: [View Website](0x57origin.vercel.app)
