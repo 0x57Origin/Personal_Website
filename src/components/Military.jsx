@@ -3,38 +3,29 @@ import React from 'react';
 const Military = () => {
   const experience = [
     {
-      title: "TACTICAL SYSTEMS MANAGEMENT",
-      description: "Lead operation and maintenance of Advanced Field Artillery Tactical Data Systems (AFATDS), ensuring mission-critical communication systems remain operational under demanding field conditions."
+      title: "AFATDS SYSTEMS",
+      description: "Operate and troubleshoot Advanced Field Artillery Tactical Data Systems for fire control data accuracy and digital communications."
     },
     {
-      title: "COMMUNICATIONS SECURITY", 
-      description: "Implement and maintain COMSEC protocols for encrypted SINCGARS networks, safeguarding sensitive military communications and ensuring operational security compliance."
+      title: "SECURE COMMUNICATIONS", 
+      description: "Maintain COMSEC procedures and encrypted SINCGARS networks for secure military communications and operational security."
     },
     {
       title: "TEAM LEADERSHIP",
-      description: "Command and mentor teams of 10-15 soldiers, developing tactical proficiency while maintaining unit readiness and morale in high-stress operational environments."
+      description: "Lead and train 10-15 soldiers in technical systems, documentation procedures, and operating digital systems under pressure."
     },
     {
-      title: "FIRE CONTROL OPERATIONS",
-      description: "Operate sophisticated fire control equipment and targeting systems, coordinating with multiple units to ensure precision and effectiveness in tactical operations."
+      title: "SYSTEM TROUBLESHOOTING",
+      description: "Diagnose and resolve technical issues with fire control systems, communications equipment, and secure data operations."
     }
   ];
 
-  const qualifications = [
-    "Security Clearance Eligible",
-    "13J Fire Control Specialist (MOS)",
-    "Tactical Vehicle Operations", 
-    "Field Communications Systems",
-    "Mission Planning & Execution",
-    "Emergency Response Protocols"
-  ];
-
   return (
-    <section id="military" className="py-20 bg-cyber-gray">
-      <div className="container mx-auto px-6">
+    <section id="military" className="py-16 sm:py-20 lg:py-24 bg-cyber-gray relative">
+      <div className="container mx-auto px-4 sm:px-6">
         <h2 className="section-title text-center">MILITARY EXPERIENCE</h2>
         
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-block">
               <h3 className="text-2xl md:text-3xl font-mono text-cyber-green mb-2">
@@ -47,7 +38,7 @@ const Military = () => {
             </div>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
             {experience.map((item, index) => (
               <div key={index} className="cyber-card">
                 <div className="flex items-start space-x-4">
@@ -61,45 +52,30 @@ const Military = () => {
             ))}
           </div>
           
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-6 sm:gap-8">
             <div className="cyber-card text-center">
-              <h3 className="font-mono text-cyber-green text-xl mb-4">CORE SYSTEMS</h3>
+              <h3 className="font-mono text-cyber-green text-xl mb-4">TECHNICAL SYSTEMS</h3>
               <ul className="text-cyber-text/80 space-y-2">
-                <li>• AFATDS (Advanced Field Artillery Tactical Data Systems)</li>
-                <li>• SINCGARS (Single Channel Ground/Air Radio Systems)</li>
-                <li>• COMSEC Equipment</li>
-                <li>• Fire Control Computing Systems</li>
+                <li>• AFATDS digital fire control systems</li>
+                <li>• SINCGARS encrypted communications</li>
+                <li>• COMSEC procedures</li>
+                <li>• Fire control data accuracy</li>
+                <li>• System troubleshooting</li>
+                <li>• Technical documentation</li>
               </ul>
             </div>
             
             <div className="cyber-card text-center">
-              <h3 className="font-mono text-cyber-green text-xl mb-4">LEADERSHIP IMPACT</h3>
+              <h3 className="font-mono text-cyber-green text-xl mb-4">OPERATIONAL EXPERIENCE</h3>
               <ul className="text-cyber-text/80 space-y-2">
-                <li>• 10-15 Soldiers Under Command</li>
-                <li>• Training & Development Programs</li>
-                <li>• Operational Readiness Management</li>
-                <li>• Performance Evaluation & Mentoring</li>
+                <li>• Leading 10-15 soldiers</li>
+                <li>• Secure communications</li>
+                <li>• Operating under pressure</li>
+                <li>• Technical training delivery</li>
+                <li>• Equipment maintenance</li>
+                <li>• Security clearance eligible</li>
               </ul>
             </div>
-            
-            <div className="cyber-card text-center">
-              <h3 className="font-mono text-cyber-green text-xl mb-4">QUALIFICATIONS</h3>
-              <ul className="text-cyber-text/80 space-y-2">
-                {qualifications.map((qual, index) => (
-                  <li key={index}>• {qual}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-          
-          <div className="mt-12 text-center cyber-card">
-            <h3 className="font-mono text-cyber-green text-xl mb-4">TRANSITION TO CYBERSECURITY</h3>
-            <p className="text-cyber-text/80 leading-relaxed max-w-3xl mx-auto">
-              Military experience has provided a foundation of discipline, attention to detail, and operational security 
-              that directly translates to cybersecurity roles. The strategic thinking developed through tactical 
-              operations, combined with hands-on experience securing communication systems, creates a unique 
-              perspective on information security and threat assessment.
-            </p>
           </div>
         </div>
       </div>
